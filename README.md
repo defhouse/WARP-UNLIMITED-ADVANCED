@@ -9,7 +9,7 @@
 <p><b><a href="#%EF%B8%8F-how-to-use-">⚙️ How to use ?</a></b></p>
 <p><b><a href="#0first-get-your-warpwarp-id-by-going-into-settings--advanced--diagnostics-and-copy-the-id-under-client-configuration-section">->😅How to get WARP/WARP+ ID?</a></b></p>
 <p><b><a href="#%EF%B8%8F-run-on-google-colab">->🕹️ Run on Google Colab</a></b></p>
-<p><b><a href="#build-or-deploy-using-docker">->🐳Deploy using Docker</a></b></p>
+<p><b><a href="#build-or-deploy-using-docker">->🐳 Deploy using Docker</a></b></p>
 <p><b><a href="#host-on-heroku">->⚡Host on Heroku (24*7)</a></b></p>
 <p><b><a href="#-host-on-railway-app">->🧿 Host on Railway App (24*7)</a></b></p>
 <p><b><a href="#-host-on-okteto">->🪬 Host on Okteto (24*7)</a></b></p>
@@ -49,7 +49,7 @@
 <h4><b>2.Now enter your <code>WARP_CLIENT_ID</code> and run The WARP+ (1.1.1.1) Code and as shown in the Image</b></h4>
 <img src="https://user-images.githubusercontent.com/87380104/186407247-61234750-e97c-44eb-aa6a-2abf35a69edf.png">
 <h4><b>4.After that! Let the code run, It will give you 1GB per 10 Seconds. But you have to update the value in the app! To do it<br>Go to Settings > Advanced > Connection options and press on Reset security keys</b></h4>
-<h3><b>🐳Build or Deploy using Docker</b></h3>
+<h2><b>🐳Build or Deploy using Docker</b></h2>
 <p><b>WARP UNLIMITED Script can be deployed almost everywhere using Docker because it can be kinda boring to add support or instruction/config file of each platform, so you can use Docker Image everywhere to deploy the script easily.</b></p>
 <h4><b>1.To pull Docker Image:</h4>
 <p><b>-><code>docker pull ghcr.io/thecaduceus/wla:master</code></b></p>
@@ -63,11 +63,9 @@
 <a href="https://heroku.com/deploy?template=https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED"><img src="Img/Heroku Deployment Button.png" alt="Deploy on Heroku"></a>
 <h4><b>2.Now Enter the following values and click <code>Deploy</code> button:</b></h4>
   <p><b>
-    <code>App Name</code> Give a unique name to your app name.<br>
-    <p></p>
     <code>WARP_ID</code> Enter your WARP/WARP+ ID.<br>
     <p></p>
-    <code>SEND_LOG</code> If you want to receive info about your deployed script like script working?,amount of data generated or number of failed attempts. 0 for No and 1 for Yes.<br>
+    <code>SEND_LOG</code> If you want to receive info about your deployed script like script working?, amount of data generated or number of failed attempts. 0 for No and 1 for Yes.<br>
     <p></p>
     <code>BOT_TOKEN</code> Enter BOT API TOKEN from Bot father which will send you the log in your channel or group. Bot must be admin in specific channel or group to send log. Required if SEND_LOG is 1.<br>
     <p></p>
@@ -98,11 +96,11 @@
     </b></p>
 <h4><b><i>❗The Major Advantage of the Railway app is that, it never restarts. So it will generate more amount of Data in 24 Hours if compared with Heroku.</i></b></h4>
 <h2><b>🪬 Host on Okteto</b></h2>
-<h4><b>Okteto is Kubernetes development platforms and used by many users and it is ideal for lightweight apps, Okteto is worst than Heroku, your script will sleep after 24 hours and will not get back to online until you ping the provided ENDPOINT.So as a workaround! you can setup cron-job.</b></h4>
-<h4><b>1.First Create your okteto Account, You need one GitHub account as okteto supports only one Method to either Create or Login: <a href="https://cloud.okteto.com/#/login">Create Account</a></b></h4>
+<h4><b>Okteto is Kubernetes development platforms and used by many users and it is ideal for lightweight apps, Okteto is worst than Heroku, your script will sleep after 24 hours and will not get back to online until you ping the provided ENDPOINT. So as a workaround! you can setup cron-job.</b></h4>
+<h4><b>1.First Create your Okteto Account, You need one GitHub account as Okteto supports only one Method to either Create or Login: <a href="https://cloud.okteto.com/#/login">Create Account</a></b></h4>
 <img src="Img/1.1.png">
-<h4><b>2.Now import this Repository and deploy this repository on Okteto.</b></h4>
-<img src="https://user-images.githubusercontent.com/87380104/186140671-fc0f44db-d2e5-4559-8090-c19b13ddfbdc.png">
+<h4><b>2.Now fork this Repository and deploy this repository on Okteto.</b></h4>
+<img src="https://user-images.githubusercontent.com/87380104/189510964-0f0fd67d-c1bd-477e-bdc4-42a51c25f200.png">
 <h4><b>3.After that, carefully add the variables in Okteto deployment page:</b></h4>
 <p><b>
     <code>WARP_ID</code> Enter your WARP/WARP+ ID.<br>
@@ -118,12 +116,12 @@
 <img src="https://user-images.githubusercontent.com/87380104/169829816-932a51f6-8cbf-4d20-975c-dfc62e2b3b62.png">
 <h4><b>4.Then go to Okteto click on <code>Launch Dev Environment</code>, select your repository and change branch from main to okteto.</b></h4>
 <h4><b>5.Finally! Click on Launch button to deploy your repository and Enjoy!😘</b></h4>
-<h4><b>6.Additionally! you can setup cron-job using <a href="cron-job.org">Cron-Job.org</a> to automatically restart your script one it sleeps after 24 hours.</b></h4>
+<h4><b>6.Additionally! you can setup cron-job using <a href="cron-job.org">Cron-Job.org</a> to automatically restart your script once it sleep after 24 hours.</b></h4>
 <h2><b>🖥️ Run on Computer</b></h2>
 <h4><b>Running this script on your Computer is simple than ABC!</b></h4>
 <h4><b>1.If your PC not have python, then install it first: <a href="https://www.python.org/downloads/">Download Python</a></b></h4>
 <h4><b>2.Now first open the WARP+ Unlimited Script code and paste it in notepad and save it as <code>Warp.py</code> don't forget to type <code>.py</code>:<a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED/blob/main/WARP.md"> Show Code</a></b></h4>
-<h4><b>✍️NOTE: The script code is available in two different edition->1. Without Telegram logger and 2.With Telegram logger</b></h4>
+<h4><b>⛔NOTE: The script code is available in two different edition->1. Without Telegram Message and 2.With Telegram Message</b></h4>
 <h4><b>3.After it run the code as shown in the Image and Enter WARP ID and Hit Enter and Enjoy!</b></h4>
 <img src="Img/6.png" alt="6">
 <h4><b><i>❗The Script will run and give you 1GB data / 10 Second until your PC is on and the Window is open. Make sure that your PC or Local System is connected to INTERNET CONNECTION.</i></b></h4>
@@ -205,7 +203,7 @@
 <h3><b>📲For Mobile:</b></h3>
 <h4><b>Go to Settings-->Advanced-->Connection Options-->Press Reset Security Keys</b></h4>
 <h3><b>🖥️For PC:<b></h3>
-<h4><b>Just again Enter your Activation key! For getting Activation key, Open App in Mobile-->Settings-->Account-->Copy Key</b></h4>
+<h4><b>Just again Enter your Activation key! For getting Activation key, Open App and go to <code>Settings->Account->Copy Key</code></b></h4>
 <h2><b>🎯Points to be Remembered</b></h2>
 <h4><b>1.You have to manually update the Value in the app.</b></h4>
 <h4><b>2.The Major Advantage of the Railway app is that, it never restarts. So it will generate more Amount of Data in 24 Hours if compared with Heroku</b></h4>
@@ -219,7 +217,7 @@
   <p><b>🖥️Windows:<a href="https://1111-releases.cloudflareclient.com/windows/Cloudflare_WARP_Release-x64.msi"> Download Now!</a></b></p>
   <p><b>🍎Mac:<a href="https://1111-releases.cloudflareclient.com/mac/Cloudflare_WARP.zip"> Download Now!</a></b></p>
   <p><b>💻Linux:<a href="https://pkg.cloudflareclient.com/"> Download Now!</a></b></p>
-  <h2><b>❓FAQ</b></h2>
+  <h2><b>❓FAQs</b></h2>
 <h4><b>1.How much scripts can I host/run for same account?</b></h4>
   <p><b>I will recommend to host/run 3 or less than 3 (<3) scripts for each account because Cloudflare is API have request limits. Hosting/Running too many scripts can cause "Too many Requests" error which indicates that API getting too many requestes from same account and that is why there is a cooldown timer of 10 seconds to prevent this.</b></p>
 <h4><b>2.How to resolve "Too many request" Error?</b></h4>
@@ -229,8 +227,8 @@
 <h4><b>4.Script not working & producing error as shown in the image in Termux. How to solve?</b></h4>
   <img src="Img/Termux-Error-1.jpeg">
   <p><b>This problem happens due to missing files! you can run the below given command in Termux to fix it easily:<br><code>termux-setup-storage && pkg update && pkg i git python wget -y && pkg upgrade && pip install --upgrade pip</code></b></p>
-<h4><b>5.Deploying this on Heroku/Railway/Okteto/Vercel cause any ban?</b></h4>
-  <p><b>No, this script comes in category of Cron-Job because this script just take the WARP/WARP+ ID from user and arrange it in a particular format and start pining it in an interval of 10 seconds.This script is lightweight and don't have any load on system. You can refer to <a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED/issues/5">issue #5</a> for more details on this.</b></p>
+<h4><b>5.Deploying this on platforms above cause ban?></h4>
+  <p><b>No, this script comes in category of Cron-Job because this script just take the WARP/WARP+ ID from user and arrange it in a particular format and start pinging it in an interval of 10 seconds.This script is lightweight and don't have any load on system. You can refer to <a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED/issues/5">issue #5</a> for more details on this.</b></p>
 <h2><b>🖥️How to use this Data on PC?</b></h2>
 <h4><b>Open the WARP or 1.1.1.1 app in your Phone and go to Settings > Account > Key and copy the License Key | Now paste that Key in your Warp app in Windows or MacOS or Linux.</b></h4>
 <h2><b>⛑Contact Us!</b></h2>
